@@ -9,7 +9,7 @@ subfolders = [f for f in os.listdir(root_directory) if os.path.isdir(os.path.joi
 
 
 html_content = "<html><head>"
-html_content += "<title>Image Gallery</title>"
+html_content += "<title>V3 Price History</title>"
 html_content += "<link rel='stylesheet' type='text/css' href='styles.css'>"  # Link to the external CSS file
 html_content += "</head><body>\n"
 
