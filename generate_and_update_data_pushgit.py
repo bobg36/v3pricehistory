@@ -1,9 +1,11 @@
 import shutil
 import os
 import subprocess
+import sys
+
 
 print('generating data')
-subprocess.run(['python', 'generate_all_charts.py'], cwd='C:\\Users\\bobgu\\Desktop\\record all sales july 2023\\axie sql')
+subprocess.run(['python', 'generate all charts.py'], cwd='C:\\Users\\bobgu\\Desktop\\record all sales july 2023\\axie sql')
 
 
 print('copying charts to local folder')
