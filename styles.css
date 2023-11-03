@@ -15,3 +15,9 @@
     filter: brightness(1); /* Reset the brightness when clicked */
     background-color: #333; /* Set the background color to a dark color when clicked */
 }
+
+p.gallery-text {
+    font-family: 'Arial', sans-serif;
+    text-align: left;
+    margin-left: 10px; /* Adjust the left margin as needed */
+  }

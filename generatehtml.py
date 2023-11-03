@@ -28,14 +28,13 @@ for subfolder in subfolders:
         # Create a link with the image as the thumbnail and apply the CSS class
         html_content += f"<a href='{subfolder}.html'><img src='{first_image_path}' alt='{subfolder}' class='thumbnail-button'></a>\n"
 
+html_content2 = "</div>\n" + '<p class="gallery-text">Click to see sales history</p>' + "</body></html>"
+with open('index.html', 'w') as index_file: # Write the HTML content to the file
+    index_file.write(html_content + html_content2)
+
 # Close the container
 html_content += "</div>\n"
 html_content += "</body></html>"
-
-# Write the HTML content to the file
-with open('index.html', 'w') as index_file:
-    index_file.write(html_content)
-
 
 
 print("index.html created.")
