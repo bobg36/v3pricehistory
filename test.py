@@ -5,13 +5,12 @@ import subprocess
 # print('generating data')
 # subprocess.run(['python', 'generate_all_charts.py'], cwd='C:\\Users\\bobgu\\Desktop\\record all sales july 2023\\axie sql')
 
+
 print('copying charts to local folder')
 source_dir = r'C:\Users\bobgu\Desktop\record all sales july 2023\axie sql\flask\static'
 destination_dir = os.getcwd() + '//data'
-
 if os.path.exists(destination_dir):
     shutil.rmtree(destination_dir)
-
 shutil.copytree(source_dir, destination_dir)
 print(f'Copied contents of "{source_dir}" to current working directory "{destination_dir}"')
 
